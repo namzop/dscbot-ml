@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://namzop.github.io/css-library/library/library.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <h1 class="center poppins">Register for Vanity Url!</h1>
+    <center>
+    <form action="{{ url_for("createforthem")}}" method="post">
+      <label for="name"></label>
+      <input style="margin-top: 20px;" type="text" id="name" name="name" placeholder="Name">
+      <label for="url"></label>
+      <input style="margin-top: 20px;" type="text" id="url" name="url" placeholder="Url">
+      <button style="margin-top:20px;" type="submit">Submit</button>
+    </center>
+  </body>
+</html>
