@@ -11,10 +11,14 @@
     <center>
     <form action="{{ url_for("createforthem")}}" method="post" class="hehe">
       <label for="name"></label>
-      <input style="margin-top: 20px;" type="text" id="name" name="name" placeholder="Name">
+      <input style="margin-top: 20px;" type="text" id="name" name="name" placeholder="Name" required>
       <label for="url"></label>
-      <input style="margin-top: 20px;" type="text" id="url" name="url" placeholder="Url">
+      <input style="margin-top: 20px;" type="text" id="url" name="url" placeholder="Url" required>
+      <label for ="key"></label>
+      <input style="margin-top:20px;" type='text' id="token" name="token" placeholder="Token" required>
       <button style="margin-top:20px; background-color:yellowgreen;border-width:0px;" type="submit">Submit</button>
+
+      <p class="poppins center"> Want to get the token? Check for a function in the code and call that function in console!</p>
     </center>
   </body>
   <style>
@@ -25,7 +29,12 @@
     .hehe{
       /* background-color:yellowgreen; */
       border-color:yellowgreen;
-      
+
     }
   </style>
+  <script>
+    function create(){
+      console.log("POST on /hehe, remember you only have 1 request per day so be careful!")
+    }
+  </script>
 </html>
