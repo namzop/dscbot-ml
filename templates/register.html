@@ -9,14 +9,13 @@
   <body>
     <h1 class="center poppins">Register for Vanity Url!</h1>
     <center>
-    <form action="{{ url_for("createforthem")}}" method="post" class="hehe">
+    <form action="{{ url_for('createforthem')}}" method="post" class="hehe">
       <label for="name"></label>
       <input style="margin-top: 20px;" type="text" id="name" name="name" placeholder="Name" required>
       <label for="url"></label>
       <input style="margin-top: 20px;" type="text" id="url" name="url" placeholder="Url" required>
       <button style="margin-top:20px; background-color:yellowgreen;border-width:0px;" type="submit">Submit</button>
 
-      <p class="poppins center"> Want to get the token? Check for a function in the code and call that function in console!</p>
     </center>
   </body>
   <style>
