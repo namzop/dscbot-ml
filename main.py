@@ -9,6 +9,9 @@ import random
 
 
 
+app = Flask(__name__)
+
+
 
 @app.route('/')
 def lol():
@@ -23,6 +26,7 @@ def notfunny(linklol):
         return render_template('notfound.html')
     else:
         return redirect(k)
+
 
 
 @app.route('/create',methods = ['POST', 'GET'])
