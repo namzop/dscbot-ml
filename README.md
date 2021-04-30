@@ -24,3 +24,5 @@ If you want to run the project on your local machine then go change the host in 
 
 #### Have fun!
 
+My frontend skills are super bad!
+

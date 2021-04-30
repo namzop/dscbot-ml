@@ -35,7 +35,7 @@ def createforthem():
         name=request.form.get('name')
         url=request.form.get('url')
         key = request.form.get('key')
-        if 'https://discord.com' in url:
+        if 'https://discord.com' in url and 'bot' in url:
             owo = database.get_link(url)
             if owo == "Not Found":
                 uwu = database.make_new_link(name, url)
@@ -68,4 +68,4 @@ def yay():
         return "Thanks for using registering! Your vanity url will start working soon!"
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=8080)
