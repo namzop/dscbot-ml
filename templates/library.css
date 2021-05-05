@@ -1,5 +1,5 @@
 /*
-Made by Namz
+Made by Namz & Someone with no name
 Twitter: https://twitter.com/notnamz
 Github: https://github.com/namzop
 */
@@ -127,4 +127,52 @@ Github: https://github.com/namzop
 }
 .white-background{
   background-color:white;
+}
+
+/*This man forgot a button smh */
+.buttonc {
+    transition-duration: 500ms;
+    background-color: rgb(21, 255, 0);
+    color: rgb(20, 109, 8);
+    border-radius: 12px;
+    padding: 20px ;
+}
+.buttonc:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(21, 255, 0);
+    cursor: pointer;
+    align-items: center;
+}
+/*And fade in SMH */
+.fade-in {
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
